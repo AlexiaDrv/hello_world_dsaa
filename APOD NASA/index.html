@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title>NASA - APOD</title>
+      <link rel="stylesheet" href="style.css">
+          <link rel="icon" type="image/png" href="favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header> <!-- début header -->
+    <h1 id="titre">Astronomy Picture Of the Day</h1><!-- titre principal -->
+    <form id="form"><!-- formulaire pour sélectionner la date -->
+        <input type="date" id="form-date"><!-- champ de texte de type date -->
+        <button id="buttongo">GO</button><!-- bouton pour valider le formulaire -->
+    </form><!-- fin du formulaire -->
+    </header> <!-- fin header -->
+
+    <iframe id="video-nasa" width="960" height="570" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><!-- iframe pour charger la page du player Youtube -->
+    <figure><!-- puisqu'il s'agit d'un média nous utilisons la balise figure -->
+        <img id="gif" src="giphy.gif">
+        <img id="image-nasa"><!-- image de la figure -->
+        <figcaption><!-- figcaption est une balise enfant (c'est-à-dire contenue par) de la balise figure -->
+            <h2 id="image-titre"></h2><!-- titre de l'image -->
+            <a href="#"></a><!-- lien vers la source -->
+            <p id="image-description"><!-- début de la description -->
+            </p><!-- fin de la description -->
+            <time></time><!-- balise time pour contenir la date -->
+        </figcaption><!-- fin de la légende de l'image -->
+    </figure><!-- fin de la balise figure -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
